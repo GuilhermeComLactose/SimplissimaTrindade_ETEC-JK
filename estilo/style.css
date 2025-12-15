@@ -54,3 +54,36 @@ body{
     width: 70%;
     font-size: 1vw;
 }
+
+/*####### PAG PERFIL ######*/
+
+.container-perfil{
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "menu content";
+    grid-template-columns: 1fr 3fr;
+    background-color: blue;
+    padding: 5px;
+    width: 99.2%;
+    gap: 3px;
+}
+
+.container-perfil div{
+    background-color: white;
+    padding: 10px;
+}
+
+.container-perfil div.header {
+  grid-area: header;
+  text-align: center;
+  height: 20%;
+}
+.container-perfil div.menu {
+  grid-area: menu;
+  height: 80%;
+}
+.container-perfil div.content {
+  grid-area: content;
+  height: 80%;
+}
